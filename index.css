@@ -1,0 +1,89 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: bisque;
+}
+h1,h3{
+    color:rgb(229, 6, 77);  
+
+}
+header{
+    text-align: center;
+    margin-top:20px;
+    padding:20px;
+}
+.taskform{
+    margin-top:30px;
+    width:50vw;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    margin-top:30px;
+}
+#entertask{
+    outline:none;
+    background: black;
+    color:grey;
+    border-radius:10px;
+    width:100%;
+    padding:8px;
+    font-size: 1.2rem;
+    margin-right:10px;
+    border:none;
+}
+#entertask::placeholder{
+    color:grey;
+    font-size: 1.2rem;
+}
+#submit{
+    background:none;
+    background-image: linear-gradient(to right,red,purple);
+    background-clip: text;
+    color:transparent;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.tasklist{    
+    margin-top:50px;    
+}
+.task{
+    width:50vw;
+    background-color: black;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+    border-radius:10px;
+    padding:5px;
+    margin-bottom: 10px;
+}
+#yourtask{
+    width:100%;
+    outline:none;
+    color:grey;
+    background-color: black;
+    padding:5px;
+    border:none;      
+    font-size: 1.2rem;
+}
+#edit,#delete{
+    color:red;
+    background:none;
+    border:none;
+    outline:none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;    
+}
+#edit{
+    margin-right: 10px;
+}
+#yourtask:not(:read-only){
+    color:rgb(240, 67, 96);
+}
